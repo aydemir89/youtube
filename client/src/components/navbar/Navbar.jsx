@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container">
         <div className="left">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            src="https://firebasestorage.googleapis.com/v0/b/teatrone.appspot.com/o/items%2Flogo.png?alt=media&token=94b4bb1d-b128-4338-9362-3354a22dbdbb"
             alt=""
           />
           <Link to="/" className="link">
@@ -30,8 +30,6 @@ const Navbar = () => {
           <Link to="/movies" className="link">
             <span className="navbarmainLinks">Movies</span>
           </Link>
-          <span>New and Popular</span>
-          <span>My List</span>
         </div>
         <div className="right">
           <Search className="icon" />

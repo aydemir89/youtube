@@ -18,7 +18,7 @@ export default function Login() {
         <div className="wrapper">
           <img
             className="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            src="https://firebasestorage.googleapis.com/v0/b/teatrone.appspot.com/o/items%2Flogo.png?alt=media&token=94b4bb1d-b128-4338-9362-3354a22dbdbb"
             alt=""
           />
         </div>
@@ -28,7 +28,7 @@ export default function Login() {
           <h1>Sign In</h1>
           <input
             type="email"
-            placeholder="Email or phone number"
+            placeholder="Enter Email"
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
@@ -39,13 +39,6 @@ export default function Login() {
           <button className="loginButton" onClick={handleLogin}>
             Sign In
           </button>
-          <span>
-            New to Netflix? <b>Sign up now.</b>
-          </span>
-          <small>
-            This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <b>Learn more</b>.
-          </small>
         </form>
       </div>
     </div>

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useRef } from "react";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./register.scss";
 
 export default function Register() {
@@ -32,18 +33,20 @@ export default function Register() {
         <div className="wrapper">
           <img
             className="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            src="https://firebasestorage.googleapis.com/v0/b/teatrone.appspot.com/o/items%2Flogo.png?alt=media&token=94b4bb1d-b128-4338-9362-3354a22dbdbb"
             alt=""
           />
-          <button className="loginButton">Sign In</button>
         </div>
       </div>
       <div className="container">
-        <h1>Unlimited movies, TV shows, and more.</h1>
+        <h1>Unlimited Theatre, Shows, and more.</h1>
         <h2>Watch anywhere. Cancel anytime.</h2>
         <p>
           Ready to watch? Enter your email to create or restart your membership.
         </p>
+        <Link to="/login" className="link">
+            <span className="loginButton"><h3>Have Account</h3></span>
+        </Link>
         {!email ? (
           <div className="input">
             <input type="email" placeholder="email address" ref={emailRef} />
